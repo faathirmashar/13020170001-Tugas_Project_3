@@ -131,9 +131,10 @@ public class Main2Activity extends AppCompatActivity {
                         if (textInput1.getEditText().getText().toString().equals("") || textInput2.getEditText().getText().toString().equals("") || textInput3.getEditText().getText().toString().equals("")) {
                             Toast.makeText(Main2Activity.this, "Luas Alas atau Tinggi Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
                         }else{
+                            
                             int panjang = Integer.parseInt(textInput1.getEditText().getText().toString());
                             int lebar = Integer.parseInt(textInput2.getEditText().getText().toString());
-                            int tinggi = Integer.parseInt(textInput3.getEditText().getTextColors().toString());
+                            int tinggi = Integer.parseInt(textInput3.getEditText().getText().toString());
 
                             float volume = panjang * lebar * tinggi;
 
