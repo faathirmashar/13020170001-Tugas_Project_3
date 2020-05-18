@@ -128,7 +128,7 @@ public class Main2Activity extends AppCompatActivity {
                 btn_hasil.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (textInput1.getEditText().getText().toString().equals("") || textInput2.getEditText().getText().toString().equals("")) {
+                        if (textInput1.getEditText().getText().toString().equals("") || textInput2.getEditText().getText().toString().equals("") || textInput3.getEditText().getText().toString().equals("")) {
                             Toast.makeText(Main2Activity.this, "Luas Alas atau Tinggi Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
                         }else{
                             int panjang = Integer.parseInt(textInput1.getEditText().getText().toString());
